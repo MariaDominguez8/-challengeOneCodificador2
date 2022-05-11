@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+body {
+    width: min-content;
+    height: min-content;
+    background: #E5E5E5;
+}
+
+header {
+    width: 100%;
+    position: absolute;
+    height: 100px;
+    background: linear-gradient(#EC9937,#C3DAF0,#70A4DD,#88b5f5);
+}
+
+.logoAlura {
+    position: absolute;
+    background: transparent;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+
+/* Campos de texto de ingreso y egreso */
+.inputTexto {
+    border: none;
+    position: absolute;
+    width: 577px;
+    height: 48px;
+    left: 240px;
+    top: 168px;
+    background: #E5E5E5;
+}
+
+.inputText2 {
+    position: absolute;
+    margin: 90px 0 0 0px;
+    padding: 60px 0;
+    width: 350px;
+    left: 1000px;
+    top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.inputText2:focus {
+    outline: none;
+}
+
+/* quitamos linea azul */
+.inputText2::-moz-selection {
+    background: transparent;
+}
+
+/* cambiamos el color azul a transparente al seleccionar */
+.inputText2::selection {
+    background: transparent;
+}
+
+.textoAviso {
+    position: absolute;
+    height: 18px;
+    left: 255px;
+    top: 851px;
+    color: #495057;
+    opacity: 0.8;
+    margin: 0 8px;
+    font-size: 12px;
+}
+
+.iconoAviso {
+    margin: 0 4px;
+}
+
+/* Botones */
+.botones {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 885px;
+}
+
+.botonEncriptar {
+    width: 328px;
+    height: 67px;
+    background: #0A3871;
+    color: #E5E5E5;
+    border-radius: 24px;
+    flex: none;
+    margin: 0px 24px;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.botonDesencriptar {
+    margin: 0px 24px;
+    width: 328px;
+    height: 67px;
+    left: 352px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0A3871;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    flex: none;
+}
+
+
+.botonCopiar {
+    position: absolute;
+    color: #0A3871;
+    width: 150px;
+    height: 67px;
+    left: 1100px;
+    top: 400px;
+    line-height: 19px;
+    box-sizing: border-box;
+    border-radius: 24px;
+}
+
+.messageCopied {
+    position: absolute;
+    left: 1032px;
+    top: 355px;
+    font-size: 25px;
+    color: #495057;
+    background: transparent;
+}
+
+/* Sección de error al no ingresar un texto*/
+.seccionError {
+    position: absolute;
+    width: 400px;
+    height: 900px;
+    left: 1000px;
+    top: 100px;
+    background: #FFFFFF;
+    border-radius: 32px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    display: none;
+}
+
+.imagenError {
+    background: transparent;
+    width: 336px;
+    height: 304px;
+    left: 1032px;
+    top: 283px;
+}
+
+.mensajNoencontrado {
+    position: absolute;
+    width: 336px;
+    height: 48px;
+    left: 0px;
+    top: 550px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    background: transparent;
+    color: #495057;
+    margin: 16px 30px;
+}
+
+.ingresaTextoError {
+    background: transparent;
+    width: 300px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    background: linear-gradient(#70A4DD,#98bef3,#b7d0ff);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 100%;
+
+}
+
+footer .copyright {
+    font-size: 18px;
+}
+
+footer a {
+    font-size: 20px;
+    padding-left: 4px;
+}

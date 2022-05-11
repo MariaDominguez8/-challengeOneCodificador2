@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <title>Encriptador De Texto</title>
+</head>
+
+<body>
+    <header>
+        <div class="logoAlura">
+            <img src="../images/Vector.png" alt="">
+        </div>
+    </header>
+    <main>
+        <section>
+            <input type="text" placeholder="Ingrese el texto aquí" class="inputTexto">
+            <h6 class="textoAviso">
+                <img src="../images/icono.png" alt="" class="iconoAviso">
+                Solo letras minúsculas y sin acentos.
+            </h6>
+            <div class="botones">
+                <button type="button" class="botonEncriptar" onclick="btnEncriptador()">Encriptar</button>
+                <button type="button" class="botonDesencriptar" onclick="btnDesencriptador()">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea cols="16" rows="2" type="text" class="inputText2"></textarea>
+            <span class="messageCopied"></span>
+            <button type="button" class="botonCopiar" onclick="copiarTexto()">
+                <i class="fa fa-copy"></i>
+            </button>
+            <div class="seccionError">
+                <img src="../images/Muñeco.png" alt="" class="imagenError">
+                <h3 class="mensajNoencontrado">Ningún mensaje fue encontrado
+                </h3>
+                <h4 class="ingresaTextoError">Ingresa el texto que desees encriptar o desencriptar.</h4>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <i class="fa fa-copyright copyright">2022 Todos los Derechos Reservados |</i><a
+                href="https://www.linkedin.com/in/mariadominguez8/">Maria Dominguez</a>
+        </div>
+    </footer>
+    <script defer src="../javascript/encriptador.js"></script>
+    <script defer src="../javascript/desencriptador.js"></script>
+    <script defer src="../javascript/copied.js"></script>
+</body>
+
+</html>
